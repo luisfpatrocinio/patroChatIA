@@ -1,0 +1,90 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e); /* Gradiente de fundo */
+    color: #e0e0e0; /* Cor do texto em contraste */
+    font-size: 1rem;
+}
+
+#chat-box {
+    width: 80%;
+    height: 60%;
+    border: 2px solid #00aaff; /* Borda brilhante */
+    padding: 10px;
+    overflow-y: scroll;
+    background: rgba(0, 0, 0, 0.7); /* Fundo semitransparente */
+    border-radius: 15px; /* Cantos arredondados */
+    box-shadow: 0 0 20px rgba(0, 0, 255, 0.5); /* Efeito de brilho */
+    margin-bottom: 20px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#chat-box div {
+    margin: 5px 0;
+    color: #e0e0e0;
+}
+
+#input-section {
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+
+#inputbox {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #00aaff; /* Borda brilhante */
+    background: rgba(255, 255, 255, 0.1); /* Fundo semitransparente */
+    color: #e0e0e0;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+#inputbox:focus {
+    border-color: #00ffff; /* Borda em foco */
+}
+
+#send-button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #00aaff; /* Cor futurística */
+    color: #fff;
+    border: 2px solid #00aaff; /* Borda combinando */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+#send-button:hover {
+    background-color: #0077cc; /* Cor ao passar o mouse */
+    border-color: #0077cc; /* Borda ao passar o mouse */
+}
+
+.user-message {
+    background-color: #0077cc; /* Cor de fundo para mensagens do usuário */
+    color: #fff; /* Cor do texto */
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px 0;
+    align-self: flex-end; /* Alinha as mensagens do usuário à direita */
+    max-width: 70%;
+}
+
+.ai-message {
+    background-color: #333; /* Cor de fundo para mensagens da I.A. */
+    color: #e0e0e0; /* Cor do texto */
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px 0;
+    align-self: flex-start; /* Alinha as mensagens da I.A. à esquerda */
+    max-width: 70%;
+}
