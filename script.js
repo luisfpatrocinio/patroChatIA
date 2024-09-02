@@ -5,7 +5,7 @@ const sendButton = document.getElementById("send-button");
 // Conectar ao  WebSocket
 // const socket = new WebSocket("ws://localhost:10000");
 const socket = new WebSocket(
-  "ws://https://geminiserver-5j3v.onrender.com/:10000"
+  "wsS://https://geminiserver-5j3v.onrender.com/:10000"
 );
 
 socket.onopen = () => {
